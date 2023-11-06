@@ -23,7 +23,8 @@ f"src/{project_name}/constant/__init__.py",
 "param.yaml",
 "requirments.txt",
 "setup.py",
-"reasearch/trails.ipynb"
+"reasearch/trails.ipynb",
+"template/index.html"
 
 
 ]
