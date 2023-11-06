@@ -21,7 +21,7 @@ f"src/{project_name}/constant/__init__.py",
 "config/config.yaml",
 "dvc.yaml",
 "param.yaml",
-"requirments.txt",
+"requirements.txt",
 "setup.py",
 "reasearch/trails.ipynb",
 "template/index.html"
