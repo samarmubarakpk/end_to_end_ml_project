@@ -7,7 +7,7 @@ import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
-from typing import any
+from typing import Any
 import base64
 
 @ensure_annotations
@@ -68,7 +68,7 @@ def load_json(path:Path)->ConfigBox:
         ConfigBox: data as class attribute instead of dict
     """
     with open(path) as f:
-        data = json.load(f)
+        content = json.load(f)
     logger.info(f"json file loaded successfully from:{path}")
     return ConfigBox(content) 
 
@@ -121,8 +121,7 @@ def decodeImage(imgstring,filename):
 
 def encodeImageIntoBase64(croppedImagePath):
     with open(croppedImagePath, 'rb') as f:
-       
-    return base64.b64encode(f.read())
+        return base64.b64encode(f.read())
 
 
 
